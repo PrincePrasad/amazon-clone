@@ -1,0 +1,112 @@
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    transition: .5s ease-in-out;
+}
+
+.header_logo:hover{
+    transform: scale(1.2);
+}
+
+.header_search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.header_search>input[type=text]:focus {
+    border: 5px solid #cd9042;
+    
+}
+
+.header_searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.header_searchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+    cursor: pointer;
+}
+
+.header_option{
+    cursor: pointer;
+}
+
+.header_optionLineOne{
+    font-size: 10px;
+}
+
+.header_optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+    transition: .5s ease-in-out;
+}
+
+.header_optionLineTwo:hover{
+    left: 2px;
+    transform: scale(1.1);
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header_optionBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header_optionBasketIcon:hover{
+    animation: shake 0.4s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: initial;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -1px) rotate(-1deg); }
+  20% { transform: translate(-1px, 1px) rotate(1deg); }
+  30% { transform: translate(1px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 1px) rotate(-1deg); }
+  60% { transform: translate(-1px, 1px) rotate(0deg); }
+  70% { transform: translate(1px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 1px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.header_basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
