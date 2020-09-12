@@ -31,9 +31,7 @@ function Login() {
 	return (
 		<div className="login">
 			<Link to ='/'>
-				<img
-					src="https://pngimg.com/uploads/amazon/amazon_PNG7.png" className="login_logo"
-				/>
+				<img src="https://pngimg.com/uploads/amazon/amazon_PNG7.png" className="login_logo" alt="logo"/>
 			</Link>
 
 			<div className="login_container">

@@ -18,7 +18,7 @@ function Header() {
     return (
         <div className="header">
             <Link to="/">
-            <img src='https://pngimg.com/uploads/amazon/amazon_PNG25.png' className="header_logo"></img>
+            <img src='https://pngimg.com/uploads/amazon/amazon_PNG25.png' className="header_logo" alt="header_logo"></img>
             </Link>
             
 
@@ -35,11 +35,12 @@ function Header() {
                     </div>
                 </Link>
 
-                <div className="header_option">
-                    
-                <span className="header_optionLineOne">Returns</span>
-                    <span className="header_optionLineTwo">& Orders</span>
-                </div>
+                <Link to='/orders'>
+                    <div className="header_option">                    
+                    <span className="header_optionLineOne">Returns</span>
+                        <span className="header_optionLineTwo">& Orders</span>
+                    </div>
+                </Link>                
 
                 <div className="header_option">                    
                     <span className="header_optionLineOne">Your</span>
